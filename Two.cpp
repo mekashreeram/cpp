@@ -2,24 +2,30 @@
 
 using namespace std;
 
-class Num
+class Complex
 {
     public:
-        int val;
-        Num(int v)
+        int real, img;
+        Complex(int r, int i)
         {
-            val = v;
+            real = r;
+            img = i;
         }
-        Num operator +(const Num obj)
+        Complex operator +(const Complex obj)
         {
-            return Num(val + obj.val);
+            return Complex(real + obj.real, img + obj.img);
+        }
+        void printNum()
+        {
+            cout << real << " + i" << "(" << img << ")";
         }
 };
 
 int main()
 {
-    Num a(3);
-    Num b(4);
-    Num c = a + b;
-    cout << c.val << endl;
+    Complex a(3, 4);
+    Complex b(14, -12);
+    Complex c = a + b;
+    c.printNum();
+    cout << endl;
 }
