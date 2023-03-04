@@ -25,7 +25,7 @@ class Student
         }
         void * operator new(size_t size)
         {
-            cout << "Overloading new operator with size: " << size;
+            cout << "Overloading new operator with size: " << size << endl;
             void * p = :: operator new(size);
             return p;
         }

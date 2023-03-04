@@ -58,6 +58,7 @@ int main()
     d1.displayDistance();
 
     ++d2;
-    cout << endl << "++d1 : ";
+    cout << endl << "++d2 : ";
     d2.displayDistance();
+    cout << endl;
 }
