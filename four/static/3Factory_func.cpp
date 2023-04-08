@@ -15,8 +15,7 @@ class Shape {
 
 class Circle : public Shape {
     public:
-        void draw()
-        {
+        void draw() {
             cout << "Drawing Circle" << endl;
         }
 };
@@ -38,13 +37,16 @@ class Rectangle : public Shape {
 Shape* Shape :: CreateShape(ShapeType type) {
     switch(type) {
         case CIRCLE:
-            return new Circle();break;
+            return new Circle();
+            break;
         case SQUARE:
-            return new Square();break;
+            return new Square();
+            break;
         case RECTANGLE:
-            return new Rectangle();break;
+            return new Rectangle();
+            break;
         default:
-            cout << "Enter correct shape!!";
+            cout << "Enter correct shape!!" << endl;
     }
 }
 
