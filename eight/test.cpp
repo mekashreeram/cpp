@@ -15,7 +15,8 @@ class MyClass {
 int main() {
   MyClass obj;
   cout << "Meow" << endl;
-  obj.~MyClass();
+  obj . ~MyClass();
   cout << "Meow" << endl;
+  obj . ~MyClass();
   return 0;
 }
