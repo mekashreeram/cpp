@@ -13,8 +13,8 @@ class MyClassThree {
 			y = b;
 		}
 		MyClassThree(const MyClassThree &other) {
-			x = other.x;
-			y = other.y;
+			x = other . x;
+			y = other . y;
 		}
 };
 
